@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: green;
+}
+header{
+  display:flex;
+  background-color: black;
+  justify-content: space-between;
+}
+.div-img{
+  display:flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+}
+
+header img {
+  max-width: 100%;
+  height:70px;
+}
+header .div-upgrade{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+header a{
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+.div-upgrade:hover a{
+  width: 300px;
+}
