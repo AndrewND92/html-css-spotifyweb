@@ -2,40 +2,61 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Palanquin Dark', sans-serif;
 }
-body{
-  background-color: #2a2a2a;
-}
-.upgrade{
-  display: flex;
-  justify-content: flex-end;
-  height: 50px;
-}
-.upgrade a {
-  border: 1px solid white;
-  border-radius: 30px;
-  padding: 10px 20px;
-  text-decoration: none;
-  position: fixed;
-  margin: 20px;
-  color: white;
-  transition-duration: 0.1s;
-}
-.upgrade:hover a{
-  transform: scale(110%);
-}
-.links-centrali{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 60px 0;
-}
-.links-centrali li{
-  display: inline-block;
-  padding: 10px;
+li{
   list-style-type: none;
 }
-.links-centrali li a{
-  text-decoration: none;
-  color: lightgray;
+.contenitore{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* parte della nav bar laterale a sx */
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 300px;
+  background-color:black;
+  padding: 10px;
+  color: grey;
+}
+.nav h3{
+  color: white;
+}
+.img-logo > img{
+  width: 200px;
+}
+.nav ul{
+  margin: 15px 0;
+}
+.nav ul li img{
+  margin-right: 10px;
+  width: 30px;
+  vertical-align: middle;
+}
+/* hover */
+.nav ul li:hover{
+  color: white;
+  transform: scale(105%);
+  transition-duration:0.1;
+  cursor:pointer;
+}
+.img-logo img:hover{
+  transform: scale(105%);
+  transition-duration:0.1;
+  cursor:pointer;
+}
+/* parte del main */
+.main{
+  /* width: 100%; */
+  width: calc(100% - 300px);
+  background-color: lightblue;
+  display: flex;
+}
+
+.player{
+  background-color: yellow;
+  height: 100px;
+  width: 100%;
 }
