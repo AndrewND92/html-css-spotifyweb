@@ -20,7 +20,8 @@ li{
   background-color:black;
   padding: 10px;
   color: grey;
-  height: calc(100vh - 100px)
+  height: calc(100vh - 100px);
+  overflow:auto;
 }
 .nav h3{
   color: white;
@@ -58,8 +59,8 @@ li{
 .main{
   width: calc(100% - 300px);
   background-color:#172b36;
-  height: calc(100vh - 100px)
-
+  height: calc(100vh - 100px);
+  overflow: auto;
 }
 .div-upgrade{
   background-color:rgb(19, 19, 19);
@@ -120,13 +121,15 @@ li{
 .album-cover{
   margin: 0 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .img{
   /* height: 100px; */
   margin: 0 10px;
   text-align: center;
   color: white;
-  width: 300px;
+  width: 200px;
   min-width: 100px;
 }
 
