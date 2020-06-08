@@ -20,6 +20,7 @@ li{
   background-color:black;
   padding: 10px;
   color: grey;
+  height: calc(100vh - 100px)
 }
 .nav h3{
   color: white;
@@ -40,12 +41,11 @@ li{
 }
 .playlist li{
   width: 40%;
+  margin: 10px 0;
 }
 /* hover */
 .nav ul li:hover{
   color: white;
-  transform: scale(105%);
-  transition-duration:0.1;
   cursor:pointer;
 }
 .img-logo img:hover{
@@ -57,7 +57,8 @@ li{
 /* parte centrale con contenuti */
 .main{
   width: calc(100% - 300px);
-  background-color:#1e4653;
+  background-color:#172b36;
+  height: calc(100vh - 100px)
 
 }
 .div-upgrade{
@@ -102,24 +103,50 @@ li{
 }
 
 .recently-played{
+  margin: 10px 10px;
   color: white;
   margin-left: 20px;
 }
 
 /* album cover */
+@media all (min-width:1050px){
+  .album.cover{
+    flex-wrap: wrap;
+  }
+}
+
+
+
 .album-cover{
   margin: 0 20px;
   display: flex;
 }
-
 .img{
-  height: 100px;
+  /* height: 100px; */
   margin: 0 10px;
+  text-align: center;
+  color: white;
+  width: 300px;
+  min-width: 100px;
 }
+
 .img img {
   max-width: 100%;
-  height: auto;
+  height:auto;
 }
+
+.img img:nth-child(2){
+  width: 100px;
+  z-index: 1;
+}
+
+
+
+.album-cover .img img:hover{
+  filter:brightness(60%);
+  transition-duration: 0.1s;
+}
+
 
 
 
@@ -131,4 +158,5 @@ li{
   background-color: yellow;
   height: 100px;
   width: 100%;
+  z-index: 900;
 }
