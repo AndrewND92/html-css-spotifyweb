@@ -110,27 +110,23 @@ li{
 }
 
 /* album cover */
-@media all (min-width:1050px){
-  .album.cover{
-    flex-wrap: wrap;
-  }
-}
-
-
-
 .album-cover{
   margin: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+}
+.album-cover::after{
+  content:"";
+  display: table;
+  clear: both;
 }
 .img{
+  float: left;
   /* height: 100px; */
   margin: 0 10px;
   text-align: center;
   color: white;
   width: 200px;
   min-width: 100px;
+  position: relative;
 }
 
 .img img {
@@ -139,18 +135,24 @@ li{
 }
 
 .img img:nth-child(2){
-  width: 100px;
+  width: auto;
   z-index: 1;
+  position: absolute;
+  top:0;
+  left: 0;
+  display: none;
+  filter: opacity(55%);
 }
 
 
-
-.album-cover .img img:hover{
+.album-cover .img:hover{
   filter:brightness(60%);
   transition-duration: 0.1s;
 }
-
-
+.album-cover .img:hover img{
+  display: inline;
+  cursor: pointer;
+}
 
 
 
