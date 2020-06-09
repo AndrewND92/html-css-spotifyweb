@@ -11,6 +11,8 @@ li{
   display: flex;
   flex-wrap: wrap;
 }
+
+
 /* parte della nav bar laterale a sx */
 .nav{
   display: flex;
@@ -55,6 +57,7 @@ li{
   cursor:pointer;
 }
 
+
 /* parte centrale con contenuti */
 .main{
   width: calc(100% - 300px);
@@ -82,7 +85,6 @@ li{
   transform: scale(105%);
   transition-duration:0.1s;
 }
-
 .link-centrali{
   display:flex;
   justify-content: center;
@@ -102,38 +104,31 @@ li{
   transform: scale(105%);
   transition-duration:0.1s;
 }
-
 .recently-played{
   margin: 10px 10px;
   color: white;
   margin-left: 20px;
 }
 
+
 /* album cover */
 .album-cover{
-  margin: 0 20px;
-}
-.album-cover::after{
-  content:"";
-  display: table;
-  clear: both;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .img{
-  float: left;
-  /* height: 100px; */
   margin: 0 10px;
   text-align: center;
   color: white;
   width: 200px;
   min-width: 100px;
-  position: relative;
+  height: auto;
 }
-
 .img img {
   max-width: 100%;
   height:auto;
 }
-
 .img img:nth-child(2){
   width: auto;
   z-index: 1;
@@ -143,8 +138,6 @@ li{
   display: none;
   filter: opacity(55%);
 }
-
-
 .album-cover .img:hover{
   filter:brightness(60%);
   transition-duration: 0.1s;
@@ -153,6 +146,79 @@ li{
   display: inline;
   cursor: pointer;
 }
+
+/* daily mix */
+.creato-per-john-doe{
+  margin: 10px;
+  color: white;
+  margin-left: 20px;
+}
+.creato-per-john-doe span{
+  color:grey;
+}
+.daily-mix{
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-daily{
+  margin: 0 20px;
+  text-align: center;
+  color: white;
+  width: 200px;
+  min-width: 100px;
+  height: auto;
+  position:relative;
+}
+
+.img-daily img{
+  max-width: 100%;
+  height: auto;
+}
+.daily-mix .img-daily img:nth-child(2){
+  width: auto;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left: 0;
+  display: none;
+  filter: opacity(55%);
+}
+.daily-mix .img-daily:hover img{
+  display: inline;
+  cursor: pointer;
+}
+
+
+/* artisti più popolari */
+.artisti-più-popolari{
+  margin: 10px;
+  color: white;
+  margin-left: 20px;
+}
+.artisti-più-popolari span{
+  color: grey;
+}
+.artisti{
+  display: flex;
+  flex-wrap: wrap;
+}
+.artisti .img-artisti img:nth-child(2){
+  width: auto;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left: 0;
+  display: none;
+  filter: opacity(55%);
+}
+.artisti .img-artisti:hover img{
+  display: inline;
+  cursor: pointer;
+}
+
+
+
+
 
 
 
@@ -164,4 +230,19 @@ li{
   height: 100px;
   width: 100%;
   z-index: 900;
+}
+.img-artisti{
+  margin: 0 20px;
+  text-align: center;
+  color: white;
+  width: 200px;
+  min-width: 100px;
+  height: auto;
+  position:relative;
+
+
+}
+.img-artisti img{
+  max-width: 100%;
+  height: auto;
 }
