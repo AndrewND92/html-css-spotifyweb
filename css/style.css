@@ -215,22 +215,6 @@ li{
   display: inline;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-/* parte del player */
-.player{
-  background-color: yellow;
-  height: 100px;
-  width: 100%;
-  z-index: 900;
-}
 .img-artisti{
   margin: 0 20px;
   text-align: center;
@@ -245,4 +229,39 @@ li{
 .img-artisti img{
   max-width: 100%;
   height: auto;
+}
+
+
+
+
+
+
+
+
+
+/* parte del player */
+.player{
+  display: flex;
+  justify-content: space-between;
+  background-color: #363636;
+  height: 100px;
+  width: 100%;
+  z-index: 900;
+  font-size: 15px;
+  color: white;
+}
+.items-folder{
+  display: flex;
+  align-items: center;
+}
+.player .items-folder img{
+  padding-left: 10px;
+  width: 70px;
+  vertical-align: middle;
+}
+.player .items-folder span{
+padding-left: 10px;
+}
+.player .items-folder span:last-child{
+  color: grey;
 }
