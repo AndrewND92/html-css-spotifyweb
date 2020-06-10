@@ -22,7 +22,7 @@ li{
   background-color:black;
   padding: 10px;
   color: grey;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   overflow:auto;
 }
 .nav h3{
@@ -62,7 +62,7 @@ li{
 .main{
   width: calc(100% - 300px);
   background-color:#172b36;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   overflow: auto;
 }
 .div-upgrade{
@@ -237,20 +237,31 @@ li{
   display: flex;
   justify-content: space-between;
   background-color: #363636;
-  height: 100px;
+  height: 70px;
   width: 100%;
   z-index: 900;
   font-size: 15px;
   color: white;
 }
+.player i{
+  text-align: center;
+  width:30px;
+  color: white;
+}
+.player i:hover{
+  transform: scale(120%);
+}
+.player input{
+  vertical-align: middle;
+}
 /* prima parte (sinistra) */
 .items-folder{
+  margin-left: 10px;
   display: flex;
   align-items: center;
 }
 .player .items-folder img{
-  padding-left: 10px;
-  width: 70px;
+  width: 50px;
   vertical-align: middle;
 }
 .player .items-folder span{
@@ -269,17 +280,14 @@ li{
   display: flex;
   justify-content: space-between;
 }
-.items-play .icone i{
-  text-align: center;
-  width:50px;
-  color: white;
-}
 .linea{
   display: flex;
   justify-content: space-between;
 }
 /* parte del volume (destra) */
 .volume{
+  margin-right: 10px;
   display: flex;
   justify-content: space-between;
+  align-items:center;
 }
