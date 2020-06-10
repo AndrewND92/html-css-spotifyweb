@@ -232,13 +232,6 @@ li{
 }
 
 
-
-
-
-
-
-
-
 /* parte del player */
 .player{
   display: flex;
@@ -250,6 +243,7 @@ li{
   font-size: 15px;
   color: white;
 }
+/* prima parte (sinistra) */
 .items-folder{
   display: flex;
   align-items: center;
@@ -260,8 +254,32 @@ li{
   vertical-align: middle;
 }
 .player .items-folder span{
-padding-left: 10px;
+  padding-left: 10px;
 }
 .player .items-folder span:last-child{
   color: grey;
+}
+/* parte centrale */
+.player-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.items-play{
+  display: flex;
+  justify-content: space-between;
+}
+.items-play .icone i{
+  text-align: center;
+  width:50px;
+  color: white;
+}
+.linea{
+  display: flex;
+  justify-content: space-between;
+}
+/* parte del volume (destra) */
+.volume{
+  display: flex;
+  justify-content: space-between;
 }
